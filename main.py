@@ -18,8 +18,8 @@ def main():
         player.draw(screen)
         pygame.display.flip()
         player.update(dt)
-        clock.tick(60)
-        dt = clock.tick() / 1000
+        dt = clock.tick(60) / 1000
+        pygame.display.update()
 
 if __name__ == "__main__":
     main()
